@@ -15,14 +15,14 @@
         <h2>Register</h2>
         <h3>Enter your credentials</h3>
 
-        <form class="Register-form">
-            <input class="control" type="text" placeholder="First name" autocomplete="off" required>
-            <input class="control" type="text" placeholder="Last name" autocomplete="off" required>
-            <input class="control" type="tel" placeholder="Phone number" autocomplete="off" required>
-            <input class="control" type="email" placeholder="Email" autocomplete="off" required>
+        <form class="Register-form" action="/register/" method="POST"> <!--important for  action and  method-->
+            <input class="control" type="text" name="Fname" placeholder="First name" autocomplete="off" required>
+            <input class="control" type="text" name="Lname" placeholder="Last name" autocomplete="off" required>
+            <input class="control" type="tel" name="tel" placeholder="Phone number" autocomplete="off" required>
+            <input class="control" type="email" name="Email" placeholder="Email" autocomplete="off" required>
             
             <div class="password">
-                <input class="control" id="password" type="password" placeholder="Password" autocomplete="off" required>
+                <input class="control" id="password" type="password" name="Password" placeholder="Password" autocomplete="off" required>
                 <button class="toggle" type="button" onclick="togglePassword(this)"></button>
             </div>
                 <button class="control"><p class="reg" id="reg123">Register</p></button>
