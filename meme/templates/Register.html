@@ -1,0 +1,34 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static  'styles.css' %}">
+    <script type="text/javascript" src="{% static 'Register.js' %}"> </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <div class ="Register-card">
+        <h2>Register</h2>
+        <h3>Enter your credentials</h3>
+
+        <form class="Register-form">
+            <input class="control" type="text" placeholder="First name" autocomplete="off" required>
+            <input class="control" type="text" placeholder="Last name" autocomplete="off" required>
+            <input class="control" type="tel" placeholder="Phone number" autocomplete="off" required>
+            <input class="control" type="email" placeholder="Email" autocomplete="off" required>
+            
+            <div class="password">
+                <input class="control" id="password" type="password" placeholder="Password" autocomplete="off" required>
+                <button class="toggle" type="button" onclick="togglePassword(this)"></button>
+            </div>
+                <button class="control"><p class="reg" id="reg123">Register</p></button>
+        </form>
+    </div>
+</body>
+</html>
+
+    
