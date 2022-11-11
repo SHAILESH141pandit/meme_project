@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static  'LoginPage/styles.css' %}">
+    <script type="text/javascript" src="{% static 'LoginPage/Login.js' %}"> </script>
+
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <div class ="login-card">
+        <h2>Login</h2>
+        <h3>Enter your credentials</h3>
+
+        <form class="login-form" action="/login/" method="POST"> <!--important for  action and  method-->
+            <input class="control" type="email" name="Email" placeholder="Email" autocomplete="off" required>
+            <div class="password">
+                <input class="control" id="password" type="password" name="Password" placeholder="Password" autocomplete="off" required>
+                <button class="toggle" type="button" onclick="togglePassword(this)"></button>
+            </div>
+                <button class="control"><p class="para">Login</p></button>
+        </form>
+    </div>
+</body>
+</html>
