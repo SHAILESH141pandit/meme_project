@@ -4,7 +4,7 @@ from django.shortcuts import render
 
 # Create your views here.
 def home(request):
-    return HttpResponse("<h1>Welcome to Meme app.")
+    return render(request, "Index.html")
 
 
 
@@ -34,7 +34,7 @@ def register(request):
             print(i,":",var[i])
         print("----------------------------")
 
-        return HttpResponse("<h1>This is GET requist for Registation.")
+        return HttpResponse("<h2> You are Successfully Register by using POST requist </h2>")
     else :
         return render(request, "Register.html")
 
@@ -50,7 +50,7 @@ def login(request):
         print(f"         Email : {email}")
         print(f"      Password : {password}")
 
-        return HttpResponse("<h1>This is GET requist for Login.")
+        return HttpResponse("<h2> You are Successfully login by using POST requist </h2>")
 
     else:
         return render(request, "Login.html")

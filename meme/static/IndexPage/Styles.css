@@ -1,0 +1,32 @@
+body {
+    display: grid;
+    margin: 0;
+    background-image: url(./blob-haikei.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Poppins;
+    animation: rotate ls infinite alternate linear;
+}
+
+.meme {
+    color: chocolate;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.Register {
+    color: rgb(251, 255, 0);
+    margin-left: 40%;
+    margin-right: auto;
+}
+
+.Login {
+    color: rgb(251, 255, 0);
+    margin-left: 40%;
+    margin-right: auto;
+}
+
+.NivBar {
+    margin-left: 35%;
+    margin-right: auto;
+}
