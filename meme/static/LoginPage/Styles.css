@@ -33,8 +33,10 @@ button {
     width: 100%;
     height: 56px;
     padding: 0 16px;
-    background: #edeaf7;
-    color: #5a4f79;
+    /* background: #edeaf7;
+    color: #5a4f79; */
+    background: #ffffff2a;
+    color: #ffffff;
     font-family: inherit;
     font-size: 16px;
     transition: 0.4s;
@@ -69,7 +71,7 @@ button {
 }
 
 .login-card > h3 {
-    color: #837f90;
+    color: #ffffff;
     margin: 0 0 40px;
     font-weight: 500;
     font-size: 1rem;
@@ -85,7 +87,7 @@ button {
 }
 
 .login-form input.control::placeholder{
-    color: #aaa7bc;
+    color: #ffffff;
 }
 
 .para {
