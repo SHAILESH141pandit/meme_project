@@ -10,8 +10,9 @@ body {
     display: grid;
     place-items: center;
     margin: 0;
-    background-image: url(./Background.svg);
-    /* background-color: rgba(190, 190, 190, 0.87); */
+    /* background-image: url(./Background.svg); */
+    background: rgb(2,0,36);
+    background: linear-gradient(168deg, rgba(2,0,36,1) 29%, rgba(60,0,117,1) 65%, rgba(0,212,255,1) 100%);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: Poppins;
@@ -46,7 +47,7 @@ button {
     background: #ffffff;
 }
 
-.login-card > h2 {
+/* .login-card > h2 {
     font-size: 36px;
     font-weight: 600;
     margin: 0 0 6px;
@@ -57,6 +58,23 @@ button {
     margin: 0 0 40px;
     font-weight: 500;
     font-size: 1rem;
+} */
+
+.login-card > h2 {
+    position:relative;
+    font-size: 36px;
+    margin: 0 0 6px;
+    font-weight: 600;
+    margin-left: 35%;
+}
+
+.login-card > h3 {
+    color: #837f90;
+    margin: 0 0 40px;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-left: 25%;
+
 }
 
 .login-form {
